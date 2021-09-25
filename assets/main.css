@@ -11,7 +11,7 @@ body {
 
 .box-header {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 156px;
     background-image: 
     url(./img/hero-bg.jpg.webp);
     background-repeat: no-repeat;
@@ -62,12 +62,14 @@ body {
     position: fixed;
     top: 24px;
     right: 38px;
+    z-index: 3;
     text-decoration: none;
     font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 12px;
+    background-color:#000;
 }
 
 .navbar-menu:hover {
@@ -151,6 +153,7 @@ body {
     position:absolute;
     top: 50%;
     right: 50px;
+    z-index: 2;
     transform: translateY(-50%);
     text-align: right;
 }
@@ -206,7 +209,7 @@ body {
     top: 0;
     right: -278px;
     background-color: #0c0c0c;
-    z-index: 2;
+    z-index: 4;
     transition: 0.7s;
 }
 
@@ -871,7 +874,7 @@ body {
 	left: 0;
 	background-color: rgba(0, 0, 0, .8);
 	opacity: 0;
-	transition: opacity .5s linear;
+	transition: .5s linear;
 }
 
 .masonry__brick:hover .masonry__brick-link::before {
